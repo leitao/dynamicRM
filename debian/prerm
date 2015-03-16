@@ -1,0 +1,11 @@
+#!/bin/bash
+# Pre-Uninstall
+if [[ "$1" = 0 && "$(stat -c %d:%i /)" = "$(stat -c %d:%i /proc/1/root/.)" ]]; then
+	if [ -e /usr/sbin/rsct/bin/rmcctrl ]; then
+		/usr/sbin/rsct/bin/rmcctrl -z
+	fi
+
+	if [ -e /usr/bin/rmssys ]; then
+		/usr/bin/rmssys -s IBM.DRM >/dev/null
+	fi
+fi

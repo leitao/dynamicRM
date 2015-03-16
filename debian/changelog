@@ -1,0 +1,5 @@
+dynamicrm (2.0.2-1) vivid; urgency=medium
+
+  * Initial release of DynamicRM package to support IBM PowerVM hypervisor 
+
+ -- Breno Leitao <breno.leitao@gmail.com>  Mon, 16 Mar 2015 13:08:54 -0400

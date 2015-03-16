@@ -1,0 +1,7 @@
+#!/bin/bash
+# Post-Uninstall
+if [[ "$1" = 0 && "$(stat -c %d:%i /)" = "$(stat -c %d:%i /proc/1/root/.)" ]]; then
+	if [ -e /usr/sbin/rsct/bin/rmcctrl ]; then
+		/usr/sbin/rsct/bin/rmcctrl -A
+	fi
+fi

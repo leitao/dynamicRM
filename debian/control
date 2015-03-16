@@ -1,0 +1,16 @@
+Source: dynamicrm
+Maintainer: Breno Leitao <breno.leitao@gmail.com>
+Section: non-free/utils
+Priority: optional
+Build-Depends: debhelper (>= 5.0.51~), lsb-release, po-debconf, unzip
+
+Package: dynamicrm
+Architecture: ppc64el
+Depends: rsct.core (>= 3.2.0.0)
+Description: DynamicRM
+ DynamicRM (DRM) is a resource manager that provides a mechanism for
+ receiving certain signals from an attached HMC.  Allows the HMC to
+ initiate dynamic reconfiguration operations, concurrent firmware updates,
+ and certain shutdown/restart operations, and prints Capacity on Demand
+ messages to the partition console.
+ .
